@@ -35,7 +35,7 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
 Start Time 2023-06-11 12:03
-Stop Time 2023-07-11 12:03
+Stop Time 2023-06-12 12:03
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -47,21 +47,35 @@ Stop Time 2023-07-11 12:03
 
 ## Attack Maps After Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```Many map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+
+<img width="1272" alt="nsg-malicious-allowed-in" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/16147826-8908-4f8b-bc1e-9196dda4bfa6">
 
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-06-13 15:37
-Stop Time	2023-06-14 15:37
+Start Time 2023-06-13 18:38
+Stop Time	2023-06-14 18:38
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 0
-| Syslog                   | 0
+| SecurityEvent            | 521
+| Syslog                   | 41
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
+
+## Metrics Comparing Before And After Hardening / Security Controls
+
+The following table compare metrics measured in our environment before and after we have applied security controls:
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent            | -86.5%
+| Syslog                   | -66.4%
+| SecurityAlert            | 0
+| SecurityIncident         | -100%
+| AzureNetworkAnalytics_CL | -100%
 
 ## Conclusion
 
