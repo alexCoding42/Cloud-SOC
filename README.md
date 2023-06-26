@@ -36,7 +36,7 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ![Windows attacks map](https://www.dropbox.com/s/6yyb9p6h3m0g1d2/windows-rdp-smb-auth-fail.png?raw=1)
 
 **This attack map shows all the failed connection attempts on the MS SQL Server**
-<img width="972" alt="mssql-auth-fail" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/b36a4f83-3352-4269-b4e6-a88829e6150a">
+![MS SQL attacks map](https://www.dropbox.com/s/jb5z4qoetpnvrlv/mssql-attack-map.png?raw=1)
 
 ## Metrics Before Hardening / Security Controls
 
