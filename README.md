@@ -27,13 +27,13 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 **This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed**
-<img width="1130" alt="nsg-malicious-allowed-in" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/5a2cef03-4154-430e-b609-1524d97078f5">
+![NSG inbound map](https://www.dropbox.com/s/vup18u8ue8h0p7u/nsg-malicious-allowed-in.png?raw=1)
 
 **This attack map shows all the failed connection attempts on the Linux Virtual Machine**
-<img width="1091" alt="syslog-ssh-auth-fail" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/ecb985f9-1691-4e98-8e8c-24cd00162a10">
+![Linux attacks map](https://www.dropbox.com/s/qdwhn8ds6hkg79d/syslog-ssh-auth-fail.png?raw=1)
 
 **This attack map shows all the failed connection attempts on the Windows Virtual Machine**
-<img width="958" alt="windows-rdp-smb-auth-fail" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/9ed5f8ab-d52f-4b22-acc2-93b5bbceea1b">
+![Windows attacks map](https://www.dropbox.com/s/6yyb9p6h3m0g1d2/windows-rdp-smb-auth-fail.png?raw=1)
 
 **This attack map shows all the failed connection attempts on the MS SQL Server**
 <img width="972" alt="mssql-auth-fail" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/b36a4f83-3352-4269-b4e6-a88829e6150a">
@@ -57,7 +57,7 @@ Stop Time 2023-06-12 12:03
 Many map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
 
 **This attack map shows the traffic involved in a Network Security Group when some security controls are applied and hardened**
-<img width="1272" alt="nsg-malicious-allowed-in" src="https://github.com/alexCoding42/Cloud-SOC/assets/56698920/16147826-8908-4f8b-bc1e-9196dda4bfa6">
+![NSG security controls map](https://www.dropbox.com/s/kf5qzy7dcs63ubr/%28after%29-nsg-malicious-allowed-in.png?raw=1)
 
 ## Metrics After Hardening / Security Controls
 
