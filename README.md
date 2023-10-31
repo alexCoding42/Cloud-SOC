@@ -28,16 +28,16 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 **This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed**
-![NSG inbound map](https://www.dropbox.com/s/vup18u8ue8h0p7u/nsg-malicious-allowed-in.png?raw=1)
+![NSG inbound map](https://www.dropbox.com/scl/fi/j5lsqz4t27m7qu9q6g7cz/nsg-malicious-allowed-in.png?rlkey=ptzsg5sxi9ydpsjpltm3r5ijy&raw=1)
 
 **This attack map shows all the failed connection attempts on the Linux Virtual Machine**
-![Linux attacks map](https://www.dropbox.com/s/qdwhn8ds6hkg79d/syslog-ssh-auth-fail.png?raw=1)
+![Linux attacks map](https://www.dropbox.com/scl/fi/8uo046wfq9e517n09ymea/syslog-ssh-auth-fail.png?rlkey=30b7vs2doal38e8gi3zasee2g&raw=1)
 
 **This attack map shows all the failed connection attempts on the Windows Virtual Machine**
-![Windows attacks map](https://www.dropbox.com/s/6yyb9p6h3m0g1d2/windows-rdp-smb-auth-fail.png?raw=1)
+![Windows attacks map](https://www.dropbox.com/scl/fi/6o3aolhnji38ndhgxap59/windows-rdp-smb-auth-fail.png?rlkey=eczgf3sqjtyfdu6lvaoskkx5r&raw=1)
 
 **This attack map shows all the failed connection attempts on the MS SQL Server**
-![MS SQL attacks map](https://www.dropbox.com/s/jb5z4qoetpnvrlv/mssql-attack-map.png?raw=1)
+![MS SQL attacks map](https://www.dropbox.com/scl/fi/jg8e3sjbmqao0l3ugnvek/mssql-attack-map.png?rlkey=trn23jss1dkkyh7742upkzj1i&raw=1)
 
 ## Metrics Before Hardening / Security Controls
 
@@ -58,7 +58,7 @@ Stop Time 2023-06-12 12:03
 Many map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
 
 **This attack map shows the traffic involved in a Network Security Group when some security controls are applied and hardened**
-![NSG security controls map](https://www.dropbox.com/s/kf5qzy7dcs63ubr/%28after%29-nsg-malicious-allowed-in.png?raw=1)
+![NSG security controls map](https://www.dropbox.com/scl/fi/302e0olnytcd0onvspq2d/after-nsg-malicious-allowed-in.png?rlkey=6895tqymx5xfhstiv5fc7vhv1&raw=1)
 
 ## Metrics After Hardening / Security Controls
 
