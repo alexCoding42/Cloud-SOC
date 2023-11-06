@@ -28,16 +28,30 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening Environment / Applying Some Security Controls
 
-**This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed**
+> [!NOTE]
+> This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed.
+
 ![NSG inbound map](https://www.dropbox.com/scl/fi/iin637sg0ztxektgk84i3/nsg-allow-malicious-inbound-flows.png?rlkey=l9ve4btccyevrnl2h1e9zxaq6&raw=1)
 
-**This attack map shows all the failed connection attempts on the Linux Virtual Machine**
+---
+
+> [!NOTE]
+> This attack map shows all the failed connection attempts on the Linux Virtual Machine.
+
 ![Linux attacks map](https://www.dropbox.com/scl/fi/tj8oyseg87f1uhm006st0/linux-ssh-authentication-failures.png?rlkey=azt8t7qfq3riqzlidwc53p73f&raw=1)
 
-**This attack map shows all the failed connection attempts on the Windows Virtual Machine**
+---
+
+> [!NOTE]
+> This attack map shows all the failed connection attempts on the Windows Virtual Machine.
+
 ![Windows attacks map](https://www.dropbox.com/scl/fi/a9gxvl752gkc3kwrsn230/windows-rdp-smb-authentication-failures.png?rlkey=1xz6d783l2flgxkefenu3m28p&raw=1)
 
-**This attack map shows all the failed connection attempts on the MS SQL Server**
+---
+
+> [!NOTE]
+> This attack map shows all the failed connection attempts on the MS SQL Server.
+
 ![MS SQL attacks map](https://www.dropbox.com/scl/fi/qyal8s5fn56u6aupzb92d/ms-sql-server-authentication-failures.png?rlkey=zj735usgyaarvzwdls8p5a9ec&raw=1)
 
 ## Metrics Before Hardening Environment / Applying Some Security Controls
@@ -56,18 +70,33 @@ The following table shows the metrics we measured in our insecure environment fo
 
 ## Attack Maps After Hardening Environment / Applying Some Security Controls
 
-Some map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
+> [!IMPORTANT]
+> Some map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
 
-**This attack map shows the traffic involved in a Network Security Group when some security controls are applied**
+> [!NOTE]
+> This attack map shows the traffic involved in a Network Security Group when some security controls are applied.
+
 ![NSG security controls map](https://www.dropbox.com/scl/fi/0mzx9poazcmiss2zzg0hj/NSG-Allowed-Malicious-Inbound-Flows-Map-After-Hardening-Controls.png?rlkey=7t65ob7cm501w6u13gcsn3awy&raw=1)
 
-**This attack map shows all the failed connection attempts on the Linux Virtual Machine when some security controls are applied**
+---
+
+> [!NOTE]
+> This attack map shows all the failed connection attempts on the Linux Virtual Machine when some security controls are applied.
+
 ![Linux attacks map](https://www.dropbox.com/scl/fi/31c02kltlgc164ebyvact/Linux-SSH-Authentication-Failures-After-Hardening-Controls.png?rlkey=zo8odmx3yu00ueaqte3wq7ylx&raw=1)
 
-**This attack map shows all the failed connection attempts on the Windows Virtual Machine when some security controls are applied**
+---
+
+> [!NOTE]
+> This attack map shows all the failed connection attempts on the Windows Virtual Machine when some security controls are applied.
+
 ![Windows attacks map](https://www.dropbox.com/scl/fi/fy125zpf45217h2jgtuek/Windows-RDP-SMB-Authentication-Failures-After-Hardening-Controls.png?rlkey=wjsdr9wrjvlvx1xh7p2cticl6&raw=1)
 
-**This attack map shows all the failed connection attempts on the MS SQL Server when some security controls are applied**
+---
+
+> [!NOTE]
+> This attack map shows all the failed connection attempts on the MS SQL Server when some security controls are applied.
+
 ![MS SQL attacks map](https://www.dropbox.com/scl/fi/hdhatn2l1rccoup9ic465/MS-SQL-Server-Authentication-Failures-After-hardening-Controls.png?rlkey=8ecc4h1qyejub6asqr9kc8qvt&raw=1)
 
 ## Metrics After Hardening Environment / Applying Security Controls
