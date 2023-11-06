@@ -1,4 +1,4 @@
-<img width="1727" alt="MS-SQL-Server-Authentication-Failures-After-hardening-Controls" src="https://github.com/alexCoding42/Cloud-SOC-Honeynet/assets/56698920/63c2c05a-b30b-4604-9a78-ccb9e5d7be28"># Building a SOC + Honeynet in Azure (Live Traffic)
+# Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cover](https://www.dropbox.com/s/x7gdmk9lbaez42x/cover.png?raw=1)
 
 ## Introduction
@@ -26,7 +26,7 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps Before Hardening Environment / Applying Some Security Controls
 **This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed**
 ![NSG inbound map](https://www.dropbox.com/scl/fi/iin637sg0ztxektgk84i3/nsg-allow-malicious-inbound-flows.png?rlkey=l9ve4btccyevrnl2h1e9zxaq6&raw=1)
 
@@ -39,7 +39,7 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 **This attack map shows all the failed connection attempts on the MS SQL Server**
 ![MS SQL attacks map](https://www.dropbox.com/scl/fi/qyal8s5fn56u6aupzb92d/ms-sql-server-authentication-failures.png?rlkey=zj735usgyaarvzwdls8p5a9ec&raw=1)
 
-## Metrics Before Hardening / Security Controls
+## Metrics Before Hardening Environment / Applying Some Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
 - Start Time 2023-10-04 18:10pm
@@ -53,7 +53,7 @@ The following table shows the metrics we measured in our insecure environment fo
 | SecurityIncident (Sentinel Incidents)          | 136
 | NSG Inbound Malicious Flows Allowed            | 4223
 
-## Attack Maps After Hardening / Security Controls
+## Attack Maps After Hardening Environment / Applying Some Security Controls
 
 Some map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
 
@@ -69,7 +69,7 @@ Some map queries returned no results due to no instances of malicious activity f
 **This attack map shows all the failed connection attempts on the MS SQL Server when some security controls are applied**
 ![MS SQL attacks map](https://www.dropbox.com/scl/fi/hdhatn2l1rccoup9ic465/MS-SQL-Server-Authentication-Failures-After-hardening-Controls.png?rlkey=8ecc4h1qyejub6asqr9kc8qvt&raw=1)
 
-## Metrics After Hardening / Security Controls
+## Metrics After Hardening Environment / Applying Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
 - Start Time 2023-10-10 10:06am
@@ -83,7 +83,7 @@ The following table shows the metrics we measured in our environment for another
 | SecurityIncident (Sentinel Incidents)          | 0
 | NSG Inbound Malicious Flows Allowed            | 0
 
-## Metrics Comparing Before And After Hardening / Security Controls
+## Metrics Comparing Before And After Hardening Environment / Applying Some Security Controls
 
 The following table compare metrics measured in our environment before and after we have applied security controls:
 
