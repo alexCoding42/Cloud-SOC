@@ -16,7 +16,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
+- Virtual Machines (1 Windows 10, 1 SQL Server on Windows 10, 1 Linux)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
