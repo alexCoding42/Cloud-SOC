@@ -42,16 +42,16 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-06-11 12:03
-Stop Time 2023-06-12 12:03
+Start Time 2023-10-04 18:10
+Stop Time 2023-10-05 18:10
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 3874
-| Syslog                   | 122
-| SecurityAlert            | 0
-| SecurityIncident         | 135
-| AzureNetworkAnalytics_CL | 25
+| Metric                                         | Count
+| -----------------------------------------------| -----
+| SecurityEvent (Windows VMs)                    | 17606
+| Syslog (Linux VM)                              | 3510
+| SecurityAlert (Microsoft Defender for Cloud)   | 131
+| SecurityIncident (Sentinel Incidents)          | 136
+| NSG Inbound Malicious Flows Allowed            | 4223
 
 ## Attack Maps After Hardening / Security Controls
 
@@ -63,28 +63,28 @@ Many map queries returned no results due to no instances of malicious activity f
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-06-13 18:38
-Stop Time	2023-06-14 18:38
+Start Time 2023-10-10 10:06
+Stop Time	2023-10-11 10:06
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 521
-| Syslog                   | 41
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
+| Metric                                         | Count
+| -----------------------------------------------| -----
+| SecurityEvent (Windows VMs)                    | 22149
+| Syslog (Linux VM)                              | 4
+| SecurityAlert (Microsoft Defender for Cloud)   | 0
+| SecurityIncident (Sentinel Incidents)          | 0
+| NSG Inbound Malicious Flows Allowed            | 0
 
 ## Metrics Comparing Before And After Hardening / Security Controls
 
 The following table compare metrics measured in our environment before and after we have applied security controls:
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | -86.5%
-| Syslog                   | -66.4%
-| SecurityAlert            | 0
-| SecurityIncident         | -100%
-| AzureNetworkAnalytics_CL | -100%
+| Metric                                         | Count
+| -----------------------------------------------| -----
+| SecurityEvent (Windows VMs)                    | 25.80%
+| Syslog (Linux VM)                              | -99.89%
+| SecurityAlert (Microsoft Defender for Cloud)   | -100%
+| SecurityIncident (Sentinel Incidents)          | -100%
+| NSG Inbound Malicious Flows Allowed            | -100%
 
 ## Conclusion
 
