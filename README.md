@@ -28,16 +28,16 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 **This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed**
-![NSG inbound map](https://www.dropbox.com/scl/fi/j5lsqz4t27m7qu9q6g7cz/nsg-malicious-allowed-in.png?rlkey=ptzsg5sxi9ydpsjpltm3r5ijy&raw=1)
+![NSG inbound map](https://www.dropbox.com/scl/fi/iin637sg0ztxektgk84i3/nsg-allow-malicious-inbound-flows.png?rlkey=l9ve4btccyevrnl2h1e9zxaq6&raw=1)
 
 **This attack map shows all the failed connection attempts on the Linux Virtual Machine**
-![Linux attacks map](https://www.dropbox.com/scl/fi/8uo046wfq9e517n09ymea/syslog-ssh-auth-fail.png?rlkey=30b7vs2doal38e8gi3zasee2g&raw=1)
+![Linux attacks map](https://www.dropbox.com/scl/fi/tj8oyseg87f1uhm006st0/linux-ssh-authentication-failures.png?rlkey=azt8t7qfq3riqzlidwc53p73f&raw=1)
 
 **This attack map shows all the failed connection attempts on the Windows Virtual Machine**
-![Windows attacks map](https://www.dropbox.com/scl/fi/6o3aolhnji38ndhgxap59/windows-rdp-smb-auth-fail.png?rlkey=eczgf3sqjtyfdu6lvaoskkx5r&raw=1)
+![Windows attacks map](https://www.dropbox.com/scl/fi/a9gxvl752gkc3kwrsn230/windows-rdp-smb-authentication-failures.png?rlkey=1xz6d783l2flgxkefenu3m28p&raw=1)
 
 **This attack map shows all the failed connection attempts on the MS SQL Server**
-![MS SQL attacks map](https://www.dropbox.com/scl/fi/jg8e3sjbmqao0l3ugnvek/mssql-attack-map.png?rlkey=trn23jss1dkkyh7742upkzj1i&raw=1)
+![MS SQL attacks map](https://www.dropbox.com/scl/fi/qyal8s5fn56u6aupzb92d/ms-sql-server-authentication-failures.png?rlkey=zj735usgyaarvzwdls8p5a9ec&raw=1)
 
 ## Metrics Before Hardening / Security Controls
 
@@ -58,7 +58,7 @@ The following table shows the metrics we measured in our insecure environment fo
 Many map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
 
 **This attack map shows the traffic involved in a Network Security Group when some security controls are applied and hardened**
-![NSG security controls map](https://www.dropbox.com/scl/fi/302e0olnytcd0onvspq2d/after-nsg-malicious-allowed-in.png?rlkey=6895tqymx5xfhstiv5fc7vhv1&raw=1)
+![NSG security controls map](https://www.dropbox.com/scl/fi/0mzx9poazcmiss2zzg0hj/NSG-Allowed-Malicious-Inbound-Flows-Map-After-Hardening-Controls.png?rlkey=7t65ob7cm501w6u13gcsn3awy&raw=1)
 
 ## Metrics After Hardening / Security Controls
 
