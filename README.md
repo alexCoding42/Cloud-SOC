@@ -1,4 +1,4 @@
-# Building a SOC + Honeynet in Azure (Live Traffic)
+<img width="1727" alt="MS-SQL-Server-Authentication-Failures-After-hardening-Controls" src="https://github.com/alexCoding42/Cloud-SOC-Honeynet/assets/56698920/63c2c05a-b30b-4604-9a78-ccb9e5d7be28"># Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cover](https://www.dropbox.com/s/x7gdmk9lbaez42x/cover.png?raw=1)
 
 ## Introduction
@@ -16,7 +16,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
-- Virtual Machines (1 Windows 10, 1 SQL Server on Windows 10, 1 Linux)
+- Virtual Machines (1 Windows 10, 1 MS SQL Server on Windows 10, 1 Linux)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
@@ -55,10 +55,19 @@ The following table shows the metrics we measured in our insecure environment fo
 
 ## Attack Maps After Hardening / Security Controls
 
-Many map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
+Some map queries returned no results due to no instances of malicious activity for the 24 hour period after hardening.
 
-**This attack map shows the traffic involved in a Network Security Group when some security controls are applied and hardened**
+**This attack map shows the traffic involved in a Network Security Group when some security controls are applied**
 ![NSG security controls map](https://www.dropbox.com/scl/fi/0mzx9poazcmiss2zzg0hj/NSG-Allowed-Malicious-Inbound-Flows-Map-After-Hardening-Controls.png?rlkey=7t65ob7cm501w6u13gcsn3awy&raw=1)
+
+**This attack map shows all the failed connection attempts on the Linux Virtual Machine when some security controls are applied**
+![Linux attacks map](https://www.dropbox.com/scl/fi/31c02kltlgc164ebyvact/Linux-SSH-Authentication-Failures-After-Hardening-Controls.png?rlkey=zo8odmx3yu00ueaqte3wq7ylx&raw=1)
+
+**This attack map shows all the failed connection attempts on the Windows Virtual Machine when some security controls are applied**
+![Windows attacks map](https://www.dropbox.com/scl/fi/fy125zpf45217h2jgtuek/Windows-RDP-SMB-Authentication-Failures-After-Hardening-Controls.png?rlkey=wjsdr9wrjvlvx1xh7p2cticl6&raw=1)
+
+**This attack map shows all the failed connection attempts on the MS SQL Server when some security controls are applied**
+![MS SQL attacks map](https://www.dropbox.com/scl/fi/hdhatn2l1rccoup9ic465/MS-SQL-Server-Authentication-Failures-After-hardening-Controls.png?rlkey=8ecc4h1qyejub6asqr9kc8qvt&raw=1)
 
 ## Metrics After Hardening / Security Controls
 
