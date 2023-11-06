@@ -27,6 +27,7 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening Environment / Applying Some Security Controls
+
 **This attack map shows the traffic involved in a Network Security Group when all inbound traffic is allowed**
 ![NSG inbound map](https://www.dropbox.com/scl/fi/iin637sg0ztxektgk84i3/nsg-allow-malicious-inbound-flows.png?rlkey=l9ve4btccyevrnl2h1e9zxaq6&raw=1)
 
