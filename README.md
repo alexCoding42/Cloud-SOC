@@ -9,7 +9,7 @@ In this project, I built a Honeynet in Azure to attract malicious actors from ar
 - Syslog (Linux Event Logs)
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+- NSG Inbound Malicious Flows Allowed (Malicious Flows allowed into our honeynet)
 
 ## Architecture
 The architecture of the mini honeynet in Azure consists of the following components:
