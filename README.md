@@ -1,26 +1,45 @@
-# Building a SOC + Honeynet in Azure (Live Traffic)
+# Building a SOC and Honeynet in Azure (Live Traffic)
 ![Cover](https://www.dropbox.com/s/x7gdmk9lbaez42x/cover.png?raw=1)
 
 ## Introduction
 
-In this project, I built a Honeynet in Azure to attract malicious actors from around the world. For that purpose, I deliberately built insecure Windows, Linux virtual machines and SQL server and gathered their logs. Then I deployed a SOC to ingest these logs into a Log Analytics workspace. I set up SIEM alerts using KQL queries by aggregating these logs and used Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. To address these SIEM alerts I acted like an incident response team to analyze each alert and close them while documenting the process. Finally, to harden the insecure honeynet I used Microsoft Defender Cloud regulatory compliance which provided security controls and best practices to align with NIST 800-53 framework; I implemented some security recommendations to protect my network resources groups. I deployed Azure Private Link and Firewall for Azure Key Vault and Storage Account instances. To compare the results between both insecure and secure environments, I measured some security metrics in the insecure environment for 24 hours, and measured metrics for another 24 hours after applying the security controls. The metrics that will be showed are:
+In this project, I built a honeynet in Azure to deliberately attract malicious actors from around the world and made them attack my honeynet. Then I created attack maps from all the incidents and practiced incident response. Finally, I hardened my honeynet to reduce the attacks and compared the metrics between the insecure environment and the secure environment.
+
+## Steps
+
+I will explain in details each steps that I took to build this project:
+
+1. Created a Network Security Group in Azure to gather all my resources. The resources were the following:
+  - 3 Virtual Machines: Windows 10 (victim), Windows 10 (attacker), Ubuntu 22.04, MS SQL Server installed on the Windows 10 victim VM.
+  - Enabling Microsoft Sentinel.
+  - Enabling Microsoft Defender for Cloud.
+  - Creating one Log Analytics Workspace.
+  - Creating Azure Storage account.
+  - Creating Azure Key Vault and adding secrets.
+
+2. Allowed all inbound traffic to the Virtual Machines, disabled the firewalls to make my environment very insecure.
+3. Enabled Azure Active Directory and assigned different roles and access controls to my Network Security Group.
+4. Created a Log Analytics Workspace in Microsoft Sentinel to monitor logs and ingested a geoip json file to build attack maps later.
+5. Enabled Microsoft Defender for Cloud and logs collection from all Virtual Machines.
+6. Enabled logging from MS SQL Server and transfer these logs to Windows Event Viewer (for them to be able to be retrieve by Microsoft Sentinel).
+7. Configured Azure Key Vault and added secrets.
+8. Configured Azure Storage and added assets.
+9. Built Workbooks in Microsoft Sentinel to create attack maps and KQL queries.
+10. Created analytics rules in Microsoft Sentinel to be able to detect and create incidents automatically.
+11. Capture the traffic during 24 hours in the insecure environment.
+12. Analysed incidents by severity, tried to gather as much information about them, and tried to closed false positive incidents by documenting each one.
+13. Practiced incident response by working on incidents and hardened the environment according to the NIST 800-53 framework recommendations.
+14. Captured the traffic during 24 hours in the secure environment and compared the metrics.
+
+## Metrics
+
+The metrics that will be showed during this project are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
 - NSG Inbound Malicious Flows Allowed (Malicious Flows allowed into our honeynet)
-
-## Architecture
-The architecture of the mini honeynet in Azure consists of the following components:
-
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (1 Windows 10, 1 MS SQL Server on Windows 10, 1 Linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
